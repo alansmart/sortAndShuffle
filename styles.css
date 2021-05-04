@@ -1,0 +1,41 @@
+body, html {
+    height: 100%;
+}
+.container {
+    background-color: #EFEFEF;    
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.tiles {
+    display: flex;
+    justify-content: left;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    padding: 10px 20px;
+}
+
+.btn-container .btn {
+    padding: 5px 78px;
+}
+
+.tiles ul li {
+    background-color: #e74040;
+    display: inline-block;
+    padding: 25px;
+}
+
+
+@media and (max-width: 76px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
