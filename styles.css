@@ -4,23 +4,24 @@ body, html {
 
 .container {
     background-color: #efefef;
-    height: 100%;
-    width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .tiles {
-    display: flex;
+    flex-direction: row;
     justify-content: left;
 }
 
 .btn-container {
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-start;
     height: 100%;
     padding: 10px 20px;
+}
+
+@media (min-width: 768px) {
+
 }
 
 .btn-container .btn {
