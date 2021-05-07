@@ -1,5 +1,5 @@
 module.exports = {
-    entry: ["./app/main.js"],
+    entry: ["./src/play.js"],
     output: {
     filename: "bundle.js"
    }

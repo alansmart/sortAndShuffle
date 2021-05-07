@@ -6,7 +6,6 @@
   "scripts": {
     "pack": "webpack",
     "publish": "webpack-dev-server --output-public-path=/dev/",
-    "compile": "babel src --out-dir .compiled --source-maps --watch",
     "build": "webpack --watch"
   },
   "repository": {

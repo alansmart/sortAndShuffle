@@ -1,6 +1,22 @@
-import {shuffle, add, sort} from './method';
+import {fetchCurrentTiles, render} from './method';
 
-document.getElementById('shuffleBtn').addEventListener('click', shuffle);
-document.getElementById('sortBtn').addEventListener('click', sort);
+/**
+ * function to be called on click of SHUFFLE button
+ */
+const shuffledTiles = () => {
+    let nodes = fetchCurrentTiles();
+    nodes = shuffledArray(nodes);
+    render(nodes);
+}
 
-console.log(add(5,10));
+/**
+ * Function to be called on click of SORT button
+ */
+const sortedTiles = () => {
+    let nodes = fetchCurrentTiles();
+    nodes = sortedArray(nodes);
+    render(nodes);   
+}
+
+document.getElementById('shuffleBtn').onclick = shuffledTiles;
+document.getElementById('sortBtn').onclick = sortedTiles;
