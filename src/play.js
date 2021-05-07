@@ -1,4 +1,4 @@
-import {fetchCurrentTiles, render} from './method';
+import {fetchCurrentTiles, shuffledArray, sortedArray, render} from './method';
 
 /**
  * function to be called on click of SHUFFLE button
