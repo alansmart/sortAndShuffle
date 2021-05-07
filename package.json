@@ -1,0 +1,38 @@
+{
+  "name": "sortandshuffle",
+  "version": "1.0.0",
+  "description": "Shuffle and sort game",
+  "main": "play.js",
+  "scripts": {
+    "pack": "webpack",
+    "publish": "webpack-dev-server --output-public-path=/dev/",
+    "build": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alansmart/sortAndShuffle.git"
+  },
+  "keywords": [
+    "sort",
+    "shuffle",
+    "play",
+    "game"
+  ],
+  "author": "Alankar Sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alansmart/sortAndShuffle/issues"
+  },
+  "homepage": "https://github.com/alansmart/sortAndShuffle#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.6.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  }
+}

@@ -1,0 +1,1 @@
+(()=>{"use strict";var e=document.getElementById("playboard");const t=()=>{let t=e.children;return t=Array.prototype.slice.call(t),t},l=t=>{let l=0;for(;l<t.length;)e.appendChild(t[l]),++l};document.getElementById("shuffleBtn").onclick=()=>{let e=t();e=shuffledArray(e),l(e)},document.getElementById("sortBtn").onclick=()=>{let e=t();e=sortedArray(e),l(e)}})();
