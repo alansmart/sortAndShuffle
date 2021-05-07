@@ -16,7 +16,7 @@ var tileBoard = document.getElementById('playboard');
  * @param {*} array It is an array of number of tiles available in the playboard
  * @returns A new array to be rendered in the DOM
  */
- const shuffledArray = (array) => {
+ export const shuffledArray = (array) => {
     let arrToBeShuffled = array.splice(0); // makes a shallow copy of the array passed as an args
     for (let i = arrToBeShuffled.length - 1; i > 0; i--) {
         let j = Math.floor(Math.random() * (i + 1));
@@ -31,7 +31,7 @@ var tileBoard = document.getElementById('playboard');
  * the elements of passed array.
  * @returns A sorted array
  */
- const sortedArray = (arr) => {
+ export const sortedArray = (arr) => {
     let updatedArray = arr.sort((x,y) => {
         return x.innerHTML - y.innerHTML;
     });
